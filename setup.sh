@@ -1,4 +1,8 @@
-
+#!/bin/bash
+function generate_user_data {
+    cat <<EOF > /tmp/userdata.sh
+EOF
+}
 COUNT=1
 IMAGE_ID=$(aws ec2 describe-images \
     --filter Name=name,Values=ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64* \
